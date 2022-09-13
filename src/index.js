@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Dashboard from './dashboard/Dashboard';
+import AddProduct from './dashboard/productManagement/AddProduct';
+import { UserManagement } from './dashboard/productManagement/UserManagement';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<App />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/dashboard/addproduct' element={<AddProduct />} />
+        <Route path='/dashboard/usermanagement' element={<UserManagement />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
