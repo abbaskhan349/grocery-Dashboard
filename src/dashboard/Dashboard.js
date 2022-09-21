@@ -13,13 +13,13 @@ function Dashboard() {
             
             <div className="">
               
-                <div className="grid grid-cols-1 gap-14 mb-6 mt-10 lg:grid-cols-4">
-                    <div className="w-[250px] h-[92px] pl-5  bg-white rounded-[24px] flex gap-4 items-center shadow ">
+                <div className="grid grid-cols-1 mb-6 gap-2 mt-10 lg:grid-cols-4">
+                    <div className="w-[245px] h-[90px] pl-5  bg-white rounded-[24px] flex gap-4 items-center shadow ">
                         <div>
                             <p className="text-sm">
                                 Monthly Cost
                             </p>
-                            <p className="mt-1 text-3xl font-bold text-gray-900">
+                            <p className="mt-1 text-2xl font-bold text-gray-900">
                                 €5.000
                             </p>
                         </div>
@@ -27,12 +27,12 @@ function Dashboard() {
                           <img className='' src='../images/graph.svg' />
                         </div> 
                     </div>
-                    <div className="w-[250px] h-[92px] pl-5  bg-white rounded-[24px] flex gap-4 items-center shadow ">
+                    <div className="w-[245px] h-[92px] pl-5  bg-white rounded-[24px] flex gap-4 items-center shadow ">
                         <div>
                             <p className="text-sm truncate">
                                 Sales Cost
                             </p>
-                            <p className="mt-1 text-3xl font-bold text-gray-900">
+                            <p className="mt-1 text-2xl font-bold text-gray-900">
                                 €7.000
                             </p>
                         </div>
@@ -40,12 +40,12 @@ function Dashboard() {
                           <img className='' src='../images/graph.svg' />
                         </div> 
                     </div>
-                    <div className="w-[250px] h-[92px] pl-5  bg-white rounded-[24px] flex gap-4 items-center shadow ">
+                    <div className="w-[245px] h-[92px] pl-5  bg-white rounded-[24px] flex gap-4 items-center shadow ">
                         <div>
                             <p className="text-sm truncate">
                                 Monthly Revenue
                             </p>
-                            <p className="mt-1 text-3xl font-bold text-gray-900">
+                            <p className="mt-1 text-2xl font-bold text-gray-900">
                                 €2.000
                             </p>
                         </div>
@@ -53,12 +53,12 @@ function Dashboard() {
                           <img className='' src='../images/graph.svg' />
                         </div> 
                     </div>
-                    <div className="w-[250px] h-[92px] pl-5  bg-white rounded-[24px] flex gap-4 items-center shadow ">
+                    <div className="w-[245px] h-[92px] pl-5  bg-white rounded-[24px] flex gap-4 items-center shadow ">
                         <div>
                             <p className="text-sm truncate">
                                 Last Yearly Projection
                             </p>
-                            <p className="mt-1 text-3xl font-bold text-gray-900">
+                            <p className="mt-1 text-2xl font-bold text-gray-900">
                                 +20%
                             </p>
                         </div>
@@ -84,7 +84,7 @@ function Dashboard() {
                     </div>
                     
                    
-                    <div className='h-[350px] w-[350px]'>
+                    <div className='h-[350px] w-[330px]'>
                         <div className="max-w-sm  ">
                         
                             <div className="mb-4 flex items-center justify-between">
@@ -93,7 +93,7 @@ function Dashboard() {
                             </h5>
                             <a
                                 href="#"
-                                className="text-sm font-light hover:underline dark:text-blue-500 pt-5"
+                                className="text-sm hover:underline dark:text-blue-500 pt-5"
                             >
                                 View all
                             </a>
@@ -122,9 +122,11 @@ function Dashboard() {
                                                     #3432434
                                                 </p>
                                             </div>
-                                            <div className=" text-xs font-extralight items-center rounded-xl p-2 bg-gray-500 shaddow">
-                                                Purchased
-                                            </div>
+                                            <span className='text-sm font-medium w-[16%]'>
+                                                <span className='w-[62px] h-[22px] bg-[#E7ECF1] text-[9px] rounded-full flex justify-center items-center'>
+                                                    Purchased
+                                                </span>
+                                            </span>
                                         </div>
                                     </li>
                                     <li className="py-3 sm:py-4 bg-white">
@@ -149,9 +151,11 @@ function Dashboard() {
                                                     #3432434
                                                 </p>
                                             </div>
-                                            <div className=" text-xs font-extralight items-center rounded-xl p-2 bg-gray-500 shaddow">
-                                                Purchased
-                                            </div>
+                                            <span className='text-sm font-medium w-[16%]'>
+                                                <span className='w-[62px] h-[22px] bg-[#E7ECF1] text-[9px] rounded-full flex justify-center items-center'>
+                                                    Purchased
+                                                </span>
+                                            </span>
                                         </div>
                                     </li>
                                     <li className="py-3 sm:py-4 bg-white">
@@ -176,9 +180,11 @@ function Dashboard() {
                                                     #3432434
                                                 </p>
                                             </div>
-                                            <div className=" text-xs font-extralight items-center rounded-xl p-2 bg-gray-500 shaddow">
-                                                Purchased
-                                            </div>
+                                            <span className='text-sm font-medium w-[16%]'>
+                                                <span className='w-[62px] h-[22px] bg-[#E7ECF1] text-[9px] rounded-full flex justify-center items-center'>
+                                                    Purchased
+                                                </span>
+                                            </span>
                                         </div>
                                     </li>
                                     <li className="py-3 sm:py-4 bg-white">
@@ -203,9 +209,11 @@ function Dashboard() {
                                                     #3432434
                                                 </p>
                                             </div>
-                                            <div className=" text-xs font-extralight items-center rounded-xl p-2 bg-gray-500 shaddow">
-                                                Purchased
-                                            </div>
+                                            <span className='text-sm font-medium w-[16%]'>
+                                                <span className='w-[62px] h-[22px] bg-[#E7ECF1] text-[9px] rounded-full flex justify-center items-center'>
+                                                    Purchased
+                                                </span>
+                                            </span>
                                         </div>
                                     </li>
                                 

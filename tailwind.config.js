@@ -6,10 +6,12 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      'primary' : '#52B467',
+      'primary': '#52B467',
       'primaryLight': '#DEFFDE',
-      'primaryExtraLight' : '#f5fff5',
-      'white': 'white'
+      'primaryExtraLight': '#F5FFF5',
+      'appPink': '#FF6270',
+      'appOrange': '#FE764B',
+      'appYellow': '#FFDE6A'
     }
   },
   plugins: [],

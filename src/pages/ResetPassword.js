@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 export default function ResetPassword() {
@@ -6,7 +7,7 @@ export default function ResetPassword() {
             <main className='w-full h-full bg-primaryExtraLight py-28 px-28'>
                 <section className='container h-full xl:h-[733px] bg-white'>
                     <div className='w-full h-full md:flex border border-[#D6F1DA] rounded-xl'>
-                        <div className='w-full h-full lg:w-[434px] bg-primaryLight flex justify-center items-center rounded-xl'>
+                        <div className='w-full h-[700px] lg:w-[434px] bg-primaryLight flex justify-center items-center rounded-xl'>
                             <img src='/images/logo.png' alt='Logo' className='w-[225px] h-[225px]' />
                         </div>
                         <section className='flex-1 flex items-center'>
@@ -29,10 +30,11 @@ export default function ResetPassword() {
                                     </div>
                                    
                                     <div className='mt-16'>
-                                        
-                                        <button className='w-[199px] h-[48px] rounded-xl bg-primary text-base text-white border border-primary font-light float-right'>
-                                            Login
-                                        </button>
+                                        <Link to='/login'>
+                                            <button className='w-[199px] h-[48px] rounded-xl bg-primary text-base text-white border border-primary font-light float-right'>
+                                                Set New Password
+                                            </button>
+                                        </Link>
                                     </div>
                                 </form>
                             </div>

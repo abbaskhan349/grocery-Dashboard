@@ -11,9 +11,9 @@ export default function Login() {
     return (
         <div>
             <main className='w-full h-full bg-primaryExtraLight py-28 px-28'>
-                <section className='container h-full xl:h-[733px] bg-white'>
-                    <div className='w-full h-full md:flex border border-[#D6F1DA] rounded-xl'>
-                        <div className='w-full h-full lg:w-[434px] bg-primaryLight flex justify-center items-center rounded-xl'>
+                <section className='conta  xl:h-[733px] bg-white'>
+                    <div className='w-full h-[700px] md:flex border border-[#D6F1DA] rounded-xl'>
+                        <div className='w-full lg:w-[434px] bg-primaryLight flex justify-center items-center rounded-xl'>
                             <img src='/images/logo.png' alt='Logo' className='w-[225px] h-[225px]' />
                         </div>
                         <section className='flex-1 flex items-center'>
@@ -35,21 +35,19 @@ export default function Login() {
                                         </div>
                                     </div>
                                     <div className='text-right mt-2'>
-                                        <Link to='./Forgot_password' className='text-xs text-black font-[500]'>Forget password?</Link>
+                                        <Link to='./login/forgotpassword' className='text-xs text-black font-[500]'>Forget password?</Link>
                                     </div>
                                     <div className='mt-16 flex justify-between'>
-                                        <button  onClick={routeChange} className='w-[199px] h-[48px] rounded-xl bg-primaryExtraLight text-base border border-primary'>
+                                        <Link to={'/register'}>
+                                            <button  onClick={routeChange} className='w-[199px] h-[48px] rounded-xl bg-primaryExtraLight text-base border border-primary'>
                                                 Register
-                                        </button>
-                                        {/* <button component={Link} to="./"
-                                            variant="contained"
-                                            color="secondary"
-                                        >
-                                            CLICK
-                                        </button> */}
-                                        <button className='w-[199px] h-[48px] rounded-xl bg-primary text-base text-white border border-primary font-light'>
-                                            Login
-                                        </button>
+                                            </button>
+                                        </Link>
+                                        <Link to='/dashboard'>
+                                            <button className='w-[199px] h-[48px] rounded-xl bg-primary text-base text-white border border-primary font-light'>
+                                                Login
+                                            </button>
+                                        </Link>
                                     </div>
                                 </form>
                             </div>
