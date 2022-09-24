@@ -25,6 +25,7 @@ import SaleItem from './dashboard/sales/SaleItem';
 import Insights from './dashboard/insights/Insights';
 import Agenda from './dashboard/agenda/Agenda';
 import AddAgenda from './dashboard/agenda/AddAgenda';
+import AgendaList from './dashboard/agenda/AgendaList'
 import EditProduct from './dashboard/productManagement/EditProduct';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -56,6 +57,7 @@ root.render(
         <Route path='/dashboard/insights' element={<Insights />} />
         <Route path='/dashboard/agenda' element={<Agenda />} />
         <Route path='/dashboard/agenda/addagenda' element={<AddAgenda />} />
+        <Route path='/dashboard/agenda/agendalist' element={<AgendaList />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -56,7 +56,9 @@ const UserManagement = () => {
                         <Link to="/dashboard/usermanagement/adduser">
                             <button
                                 className='w-[150px] h-[44px] md:w-[199px] md:h-[48px] text-sm md:text-base text-white bg-primary rounded-xl font-light mt-4'
-                            >New Role</button>
+                            >
+                                New Role
+                            </button>
                         </Link>
                     </div>
                     <section className='mt-20 overflow-x-auto'>

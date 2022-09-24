@@ -33,27 +33,27 @@ const AddCatagory = () => {
                     <form className=''>
                         <div className='w-full mb-6'>
                             <label className='text-base text-black'>Product name</label>
-                            <div className='w-full h-10 rounded-[14px] border border-primary bg-[#F7F7F7] mt-2 px-5 flex items-center'>
-                                <input type="text" className="border-none w-full bg-transparent text-base focus:outline-none ml-4" />
+                            <div className='w-full h-14 rounded-[14px] border border-primary bg-[#F7F7F7] mt-2 px-5 flex items-center'>
+                                <input type="text" className="border-none w-full bg-[#f7f7f7] text-base focus:outline-none ml-4" />
                             </div>
                         </div>
                         <div className='w-full mb-6'>
                             <label className='text-base text-black'>aliquota_iva</label>
-                            <div className='w-full h-10 rounded-[14px] border border-primary bg-[#F7F7F7] mt-2 px-5 flex items-center'>
-                                <input type="text" className="border-none w-full bg-transparent text-base focus:outline-none ml-4" />
+                            <div className='w-full h-14 rounded-[14px] border border-primary bg-[#F7F7F7] mt-2 px-5 flex items-center'>
+                                <input type="text" className="border-none w-full bg-[#f7f7f7] text-base focus:outline-none ml-4" />
                             </div>
                         </div>
                         <div className='select_wrapper mb-6'>
                             <label className='text-black text-base '>
                                 IVA Type
                             </label>
-                            <div className='w-full h-10 rounded-[14px] border border-primary bg-[#F7F7F7] mt-2 px-5'>
+                            <div className='w-full h-14 rounded-[14px] border border-primary bg-[#F7F7F7] mt-2 px-5'>
                                 <Select
                                     // value={selectedOption}
                                     // onChange={setSelectedOption}
                                     options={ivaType}
                                     placeholder="Select the IVA Type"
-                                    className=''
+                                    className='pt-[8px]'
                                 />
                             </div>
                             
@@ -62,17 +62,18 @@ const AddCatagory = () => {
                             <label className='text-black text-base'>
                                 Status
                             </label>
-                            <div className='w-full h-10 rounded-[14px] border border-primary bg-[#F7F7F7] mt-2 px-5'>
+                            <div className='w-full h-14 rounded-[14px] border border-primary bg-[#F7F7F7] mt-2 px-5'>
                                 <Select
                                     // value={selectedOption}
                                     // onChange={setSelectedOption}
                                     options={status}
                                     placeholder="Active"
+                                    className='pt-[8px]'
                                 />
                             </div>
                         </div>
                         <div className='text-right'>
-                            <button className='w-[199px] h-10 text-base text-white bg-primary rounded-xl font-light'>Add Product</button>
+                            <button className='w-[199px] h-12 text-base text-white bg-primary rounded-xl font-light'>Add Product</button>
                         </div>
                     </form>
                 </div>

@@ -60,22 +60,22 @@ const AllCatagories = () => {
                             <img src='/images/dropdown.svg' alt='Dropdown' />
                         </div>
                         <ul
-                            className='w-[121px] border border-[#0B102333] rounded-[11px] py-2 list-none text-center absolute top-full mt-1 bg-white transition-all duration-300'
+                            className='w-[121px] border border-[#0B102333] rounded-[11px] py-2 list-none text-center absolute top-full mt-1 bg-[#fff] transition-all duration-300'
                             style={{ opacity: show ? 1 : 0 }}
                         >
                             <li>
                                 <Link to="#">
-                                    <span className='font-medium text-xs my-2'>Profile setting</span>
+                                    <span className='font-medium text-xs my-2'>first option</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="#">
-                                    <span className='font-medium text-xs my-2 text-[#FF3D4E]'>End work day</span>
+                                    <span className='font-medium text-xs my-2'>second</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="#">
-                                    <span className='font-medium text-xs my-2'>Log out</span>
+                                    <span className='font-medium text-xs my-2'>third</span>
                                 </Link>
                             </li>
                         </ul>

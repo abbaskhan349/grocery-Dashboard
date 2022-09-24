@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import Select from 'react-select';
+import { Link } from 'react-router-dom';
 
 const AddAgenda = () => {
     const locations = [
@@ -26,9 +27,11 @@ const AddAgenda = () => {
             <section className='flex-1 h-auto md:h-[911px] bg-white rounded-[32px] px-7 sm:px-16 py-8'>
                 <div className='flex flex-wrap gap-y-3 justify-between'>
                     <h1 className='font-medium text-xl md:text-[24px]'>Add Agenda</h1>
-                    <button
-                        className='w-[150px] h-[44px] md:w-[199px] md:h-[48px] text-sm md:text-base text-white bg-primary rounded-xl font-light'
-                    >All Agenda</button>
+                    <Link to="/dashboard/agenda/agendalist">
+                        <button
+                            className='w-[150px] h-[44px] md:w-[199px] md:h-[48px] text-sm md:text-base text-white bg-primary rounded-xl font-light'
+                        >All Agenda</button>
+                    </Link>
                 </div>
                 <div className='w-full xl:w-[822px] mt-10'>
                     <form className=''>

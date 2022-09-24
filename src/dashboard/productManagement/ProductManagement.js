@@ -2,34 +2,54 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Layout from '../../components/Layout';
 
+const Categories = [
+  {
+      id: 1,
+      name: '1',
+      img: '/images/product.png',
+      more: true
+  },
+  {
+    id: 2,
+      name: '',
+      img: '/images/product.png',
+      more: false,
+      background: true,
+  },
+  {
+    id: 3,
+      name: '',
+      img: '/images/product.png',
+      more: false
+  },
+  {
+    id: 4,
+      name: '',
+      img: '/images/product.png',
+      more: false,
+      background: true,
+  },
+];
+
 function ProductManagement() {
   
     const [show, setShow] = useState(false);
     const [showMore, setShowMore] = useState(false);
-    const Categories = [
-        {
-            name: '',
-            img: '/images/product.png',
-            more: true
-        },
-        {
-            name: '',
-            img: '/images/product.png',
-            more: false,
-            background: true,
-        },
-        {
-            name: '',
-            img: '/images/product.png',
-            more: false
-        },
-        {
-            name: '',
-            img: '/images/product.png',
-            more: false,
-            background: true,
-        },
-    ];
+
+    const [items, setItems] = useState(Categories);
+    const deleteItem = (index) => {
+      setItems(items.filter((_, i) => i !== index));
+      console.log(index)
+
+      // setItems(items.filter((_, i) => {
+      //   console.log(index, i)
+      //   console.log(typeof(index, i))
+      //   console.log(index !== i)
+      //   return index !== i
+      // }))
+    }
+
+    
     const ProductsList = [
         {
             name: '',
@@ -76,7 +96,7 @@ function ProductManagement() {
           </div>
           
           <div className='pb-5 lg:pb-0'>
-                        {Categories.map((item, index) => (
+                        {items.map((item, index) => (
                             <div className={`flex justify-between items-center h-[89px] my-2 px-3 md:px-5 ${item.background && "bg-primaryExtraLight"}`} key={index}>
                                 <span className='flex items-center gap-x-2'>
                                     <img src='/images/product.png' alt='Product' className='w-[56px] h-[56px] rounded-full' />
@@ -91,7 +111,7 @@ function ProductManagement() {
                                             className="cursor-pointer"
                                         />
                                         <ul
-                                            className='w-[119px] border border-[#0B102333] rounded-[11px] py-2 list-none text-center absolute top-full right-0 mt-1 bg-white transition-all duration-300'
+                                            className='w-[119px] border border-[#0B102333] rounded-[11px] py-2 list-none text-center absolute top-full right-0 mt-1 bg-[#fff] transition-all duration-300'
                                             style={{ opacity: show ? 1 : 0 }}
                                         >
                                             <li className='border-b pb-1'>
@@ -101,11 +121,16 @@ function ProductManagement() {
                                                     <span className='font-medium text-xs'>Edit</span>
                                                 </Link>
                                             </li>
-                                            <li className='pb-1'>
-                                                <Link to="#">
-                                                    <span className='font-medium text-xs text-[#FF3D4E]'>Delete</span>
-                                                </Link>
+                                            <li className='pb-1' key={item.id}>
+                                              <span 
+                                                onClick={() => deleteItem(index)} 
+                                                className='font-medium text-xs text-[#FF3D4E] cursor-pointer'
+                                              >
+                                                Delete
+                                              </span>
+                                                
                                             </li>
+                                            
                                         </ul>
                                     </div>
                                 )}

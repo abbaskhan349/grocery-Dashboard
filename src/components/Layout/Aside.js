@@ -11,7 +11,7 @@ const Aside = () => {
   return (
     <>
         {/* Modal for Logout */}
-            <ModalBox open={showModal} close={setModalShow} className="md:w-[753px] rounded-xl py-3">
+            <ModalBox open={showModal} close={setModalShow} className="md:w-[753px] bg-[#fff] rounded-xl py-3">
                 <section className='py-10 px-7 md:px-28 md:py-16 flex flex-col items-center'>
                     <div className='w-[129px] h-[129px] bg-primaryExtraLight rounded-full flex justify-center items-center'>
                         <img src='/images/logout-green.svg' alt='dollar' />
@@ -32,7 +32,7 @@ const Aside = () => {
                 </section>
             </ModalBox>
             {/* Logout for ending day */}
-            <ModalBox open={showEndDayModal} close={setShowEndDayModal} className="md:w-[753px] rounded-xl py-3">
+            <ModalBox open={showEndDayModal} close={setShowEndDayModal} className="md:w-[753px]  rounded-xl py-3">
                 <section className='py-10 px-7 md:px-28 md:py-16 flex flex-col items-center'>
                     <div className='w-[129px] h-[129px] bg-[#FFDFDF] rounded-full flex justify-center items-center'>
                         <img src='/images/logout-red.svg' alt='dollar' />

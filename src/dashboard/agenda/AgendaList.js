@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Layout from '../../components/Layout';
-import Link from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ModalBox from '../../components/modal';
 
 const AgendaList = () => {
@@ -65,9 +65,9 @@ const AgendaList = () => {
                 </section>
             </ModalBox>
             <section className='flex-1 h-auto md:h-[911px] bg-white rounded-[32px] px-4 sm:px-10 py-8'>
-                <div className='flex flex-wrap justify-start gap-5 px-3'>
+                <div className='flex justify-between gap-5 px-3'>
                     <h1 className='font-medium text-xl md:text-[24px]'>List of Agendas</h1>
-                    <Link href="/admin/agenda/add_agenda">
+                    <Link to="/admin/agenda/addagenda">
                         <button
                             className='w-[150px] h-[44px] md:w-[199px] md:h-[48px] text-sm md:text-base text-white bg-primary rounded-xl font-light mt-4 ml-auto'
                         >Add Agenda</button>

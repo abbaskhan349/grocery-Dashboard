@@ -11,7 +11,8 @@ module.exports = {
       'primaryExtraLight': '#F5FFF5',
       'appPink': '#FF6270',
       'appOrange': '#FE764B',
-      'appYellow': '#FFDE6A'
+      'appYellow': '#FFDE6A',
+      'white': '#fff',
     }
   },
   plugins: [],

@@ -44,7 +44,7 @@ export default function Login() {
                                             </button>
                                         </Link>
                                         <Link to='/dashboard'>
-                                            <button className='w-[199px] h-[48px] rounded-xl bg-primary text-base text-white border border-primary font-light'>
+                                            <button className='w-[199px] h-[48px] rounded-xl bg-primary text-base text-[#fff] border border-primary font-light'>
                                                 Login
                                             </button>
                                         </Link>
