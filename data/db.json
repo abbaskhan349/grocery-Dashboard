@@ -1,0 +1,1613 @@
+{
+	"info": {
+		"_postman_id": "bc48d970-7a83-41d2-bd70-449ca9ceacc6",
+		"name": "Bilancia Web",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23481426"
+	},
+	"item": [
+		{
+			"name": "Microserver",
+			"item": [
+				{
+					"name": "Command",
+					"item": [
+						{
+							"name": "Command",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/microserver/command/1/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"microserver",
+										"command",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Microserver",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev_path}}/api/microserver/1/",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"microserver",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Microserver",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"register_token\": \"Jk3yI6ObrjH84syrel3VtJ0OtRThrkQn\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_path}}/api/update_microserver",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"update_microserver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Microserver",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "{{dev_path}}/api/microserver",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"microserver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Microserver Upload",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "{{dev_path}}/api/microserver",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"microserver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Command update",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev_path}}/api/microserver/command/1/",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"microserver",
+								"command",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Command update",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"microserver\": 1,\r\n    \"register_token\": \"QekaDxSgYkkctsHlL518G1yrvn8GNWWg\",\r\n    \"is_executed\": true,\r\n    \"additional_info\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_path}}/api/microserver/command/1/",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"microserver",
+								"command",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Download data",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"microserver_token\": \"QekaDxSgYkkctsHlL518G1yrvn8GNWWg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_path}}/api/microserver/1/download",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"microserver",
+								"1",
+								"download"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload data",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"microserver_token\": \"QekaDxSgYkkctsHlL518G1yrvn8GNWWg\",\r\n    \"scontrini\": [\r\n        {\r\n            \"operazione\": \"1\",\r\n            \"spare\": \"0.90\",\r\n            \"data_apertura_scontrino\": \"20220912094803\",\r\n            \"numero_scontrino\": \"6\",\r\n            \"id_operatore\": \"1\",\r\n            \"tipo_battuta\": \"A\",\r\n            \"id_battuta\": \"1\",\r\n            \"id_plu\": \"9\",\r\n            \"reparto\": \"2\",\r\n            \"lotto\": \"UF7KDL1T\",\r\n            \"tara\": \"0\",\r\n            \"tipo_tara\": \"T\",\r\n            \"peso_netto\": \"266\",\r\n            \"prezzo_unitario\": \"1000\",\r\n            \"importo\": \"266\",\r\n            \"totale\": \"0\",\r\n            \"contante\": \"0\",\r\n            \"sconto_perc\": \"0\",\r\n            \"sconto_importo\": \"0\",\r\n            \"quantita\": \"1\",\r\n            \"iva\": \"0\",\r\n            \"count_ristampe\": \"0\",\r\n            \"id_bilancia\": \"1\",\r\n            \"id_tracciabilita\": \"0\"\r\n        },\r\n        {\r\n            \"operazione\": \"1\",\r\n            \"spare\": \"0.90\",\r\n            \"data_apertura_scontrino\": \"20220912094803\",\r\n            \"numero_scontrino\": \"6\",\r\n            \"id_operatore\": \"1\",\r\n            \"tipo_battuta\": \"T\",\r\n            \"id_battuta\": \"2\",\r\n            \"id_plu\": \"0\",\r\n            \"reparto\": \"0\",\r\n            \"lotto\": \"\",\r\n            \"tara\": \"0\",\r\n            \"tipo_tara\": \"N\",\r\n            \"peso_netto\": \"0\",\r\n            \"prezzo_unitario\": \"0\",\r\n            \"importo\": \"0\",\r\n            \"totale\": \"266\",\r\n            \"contante\": \"0\",\r\n            \"sconto_perc\": \"0\",\r\n            \"sconto_importo\": \"0\",\r\n            \"quantita\": \"0\",\r\n            \"iva\": \"0\",\r\n            \"count_ristampe\": \"0\",\r\n            \"id_bilancia\": \"1\",\r\n            \"id_tracciabilita\": \"0\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_path}}/api/microserver/2/upload",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"microserver",
+								"2",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fiscal Printer",
+			"item": [
+				{
+					"name": "Fiscal Printer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev_path}}/api/fiscal-printer/fiscal-printer/",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"fiscal-printer",
+								"fiscal-printer",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fiscal Printer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"main\",\r\n    \"number\": \"1\",\r\n    \"ip\": \"192.168.10.200\",\r\n    \"port\": 1723,\r\n    \"microserver\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_path}}/api/fiscal-printer/fiscal-printer/",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"fiscal-printer",
+								"fiscal-printer",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fiscal Printer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"main\",\r\n    \"number\": \"1\",\r\n    \"ip\": \"192.168.10.200\",\r\n    \"port\": 1723,\r\n    \"microserver\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_path}}/api/fiscal-printer/fiscal-printer/1/",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"fiscal-printer",
+								"fiscal-printer",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fiscal Printer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{dev_path}}/api/fiscal-printer/fiscal-printer/1/",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"fiscal-printer",
+								"fiscal-printer",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agenda",
+			"item": [
+				{
+					"name": "Event",
+					"item": [
+						{
+							"name": "Event",
+							"request": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/agenda/event/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"agenda",
+										"event",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Event",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/agenda/event/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"agenda",
+										"event",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Event",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/agenda/event/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"agenda",
+										"event",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Event",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"begin_datetime\": \"2022-09-20T10:15:12\",\r\n    \"end_datetime\": \"2022-09-20T10:30:12\",\r\n    \"title\": \"Test\",\r\n    \"description\": \"Test description\",\r\n    \"participants\": [1]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/agenda/event/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"agenda",
+										"event",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Event",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"begin_datetime\": \"2022-09-20T10:15:12\",\r\n    \"end_datetime\": \"2022-09-20T10:30:12\",\r\n    \"title\": \"Test\",\r\n    \"description\": \"Test description\",\r\n    \"participants\": [2]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/agenda/event/1/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"agenda",
+										"event",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Tag",
+					"item": [
+						{
+							"name": "Tag",
+							"request": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/agenda/tag/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"agenda",
+										"tag",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Tag",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/agenda/tag/1/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"agenda",
+										"tag",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Tag",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"prova\",\r\n    \"color\": \"FFFFFF\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/agenda/tag/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"agenda",
+										"tag",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Tag",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"prova\",\r\n    \"color\": \"FFFFFF\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/agenda/tag/1/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"agenda",
+										"tag",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Tag",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"prova\",\r\n    \"color\": \"FFFFFF\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/agenda/tag/1/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"agenda",
+										"tag",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Insights",
+			"item": [
+				{
+					"name": "Product",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "{{dev_path}}/api/insights/product",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"insights",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Gloab",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "{{dev_path}}/api/insights/global",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"insights",
+								"global"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manager",
+			"item": [
+				{
+					"name": "Resources",
+					"item": [
+						{
+							"name": "Actions",
+							"item": [
+								{
+									"name": "Resource Action",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{dev_path}}/api/manager/resource-action/",
+											"host": [
+												"{{dev_path}}"
+											],
+											"path": [
+												"api",
+												"manager",
+												"resource-action",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Resource Action",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n        \"action_type\": \"purchase\",\r\n        \"quantity\": 0.266,\r\n        \"money\": 2.66,\r\n        \"date_time\": \"2022-09-12T17:53:58.569505+02:00\",\r\n        \"print_counter\": 0,\r\n        \"is_for_internal_usage\": false,\r\n        \"resource\": 62\r\n    }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{dev_path}}/api/manager/resource-action/",
+											"host": [
+												"{{dev_path}}"
+											],
+											"path": [
+												"api",
+												"manager",
+												"resource-action",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Resource Action Copy",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{dev_path}}/api/manager/resource-action/1099/",
+											"host": [
+												"{{dev_path}}"
+											],
+											"path": [
+												"api",
+												"manager",
+												"resource-action",
+												"1099",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Processed Resource Action",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{dev_path}}/api/manager/processed-resource-action/",
+											"host": [
+												"{{dev_path}}"
+											],
+											"path": [
+												"api",
+												"manager",
+												"processed-resource-action",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Processed Resource Action",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n        \"action_type\": \"waste\",\r\n        \"quantity\": 0.266,\r\n        \"money\": 2.66,\r\n        \"date_time\": \"2022-09-12T17:53:58.569505+02:00\",\r\n        \"print_counter\": 0,\r\n        \"is_for_internal_usage\": false,\r\n        \"resource\": 1\r\n    }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{dev_path}}/api/manager/processed-resource-action/",
+											"host": [
+												"{{dev_path}}"
+											],
+											"path": [
+												"api",
+												"manager",
+												"processed-resource-action",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Processed Resource Action",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{dev_path}}/api/manager/processed-resource-action/1/",
+											"host": [
+												"{{dev_path}}"
+											],
+											"path": [
+												"api",
+												"manager",
+												"processed-resource-action",
+												"1",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Resource",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+										"key": "Authorization",
+										"value": "Token 585b2f8357abdd088232ab1a1f747d7b47e22148e3f0c90baf13b9c066993130",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{dev_path}}/api/manager/resource/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"resource",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resource",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/manager/resource/69/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"resource",
+										"69",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resource",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Test\",\r\n    \"category\": 7,\r\n    \"iva_aliquota\": 9,\r\n    \"iva_type\": \"VI\",\r\n    \"stock_quantity\": 0,\r\n    \"stock_quantity_threshold\": 0,\r\n    \"measure_unit\": \"kg\",\r\n    \"barcode\": \"\",\r\n    \"plu\": 1,\r\n    \"unit_sale_price\": 10.00,\r\n    \"tare\": 0,\r\n    \"weight_type\": 1,\r\n    \"ingredient\": null,\r\n    \"packaging_date\": null,\r\n    \"expiration_date\": null,\r\n    \"image\": null,\r\n    \"revenue_percentage\": 30.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/manager/resource/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"resource",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resource",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Prova\",\r\n    \"category\": 11,\r\n    \"iva_aliquota\": 23,\r\n    \"iva_type\": \"VI\",\r\n    \"stock_quantity\": 0,\r\n    \"stock_quantity_threshold\": 0,\r\n    \"measure_unit\": \"kg\",\r\n    \"barcode\": \"\",\r\n    \"plu\": 1,\r\n    \"unit_sale_price\": 10.00,\r\n    \"tare\": 0,\r\n    \"weight_type\": 1,\r\n    \"ingredient\": null,\r\n    \"packaging_date\": null,\r\n    \"expiration_date\": null,\r\n    \"image\": null,\r\n    \"revenue_percentage\": 30.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/manager/resource/69/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"resource",
+										"69",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Processed resource",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/manager/processed-resource",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"processed-resource"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Processed resource",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/manager/processed-resource/2/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"processed-resource",
+										"2",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Processed resource",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Processed test\",\r\n    \"category\": 11,\r\n    \"iva_aliquota\": 23,\r\n    \"iva_type\": \"VI\",\r\n    \"stock_quantity\": 0,\r\n    \"stock_quantity_threshold\": 0,\r\n    \"measure_unit\": \"kg\",\r\n    \"barcode\": \"\",\r\n    \"plu\": 1,\r\n    \"unit_sale_price\": 10.00,\r\n    \"tare\": 0,\r\n    \"weight_type\": 1,\r\n    \"ingredient\": null,\r\n    \"packaging_date\": null,\r\n    \"expiration_date\": null,\r\n    \"image\": null,\r\n    \"revenue_percentage\": 30.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/manager/processed-resource/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"processed-resource",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Processed resource",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Processed test\",\r\n    \"category\": 11,\r\n    \"iva_aliquota\": 23,\r\n    \"iva_type\": \"VI\",\r\n    \"stock_quantity\": 0,\r\n    \"stock_quantity_threshold\": 0,\r\n    \"measure_unit\": \"kg\",\r\n    \"barcode\": \"\",\r\n    \"plu\": 1,\r\n    \"unit_sale_price\": 10.00,\r\n    \"tare\": 0,\r\n    \"weight_type\": 1,\r\n    \"ingredient\": null,\r\n    \"packaging_date\": null,\r\n    \"expiration_date\": null,\r\n    \"image\": null,\r\n    \"revenue_percentage\": 30.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/manager/processed-resource/2/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"processed-resource",
+										"2",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Categories",
+					"item": [
+						{
+							"name": "Category",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/manager/category/21",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"category",
+										"21"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Category",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Cat 5\",\r\n    \"default_price\": 0,\r\n    \"min_value\": 0,\r\n    \"max_value\": 0,\r\n    \"discount_value\": 0,\r\n    \"iva_type\": \"VI\",\r\n    \"iva_aliquota\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/manager/category/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"category",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Category",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"update cat\",\r\n    \"default_price\": 0,\r\n    \"min_value\": 0,\r\n    \"max_value\": 0,\r\n    \"discount_value\": 0,\r\n    \"iva_type\": \"VI\",\r\n    \"iva_aliquota\": 23\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/manager/category/21/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"category",
+										"21",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Category",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/manager/category/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"category",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business",
+					"item": [
+						{
+							"name": "Business",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/manager/business/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"business",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Business",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"SP Forniture\",\r\n    \"tax_id\": \"11512940963\",\r\n    \"location_number\": \"9\",\r\n    \"location_street\": \"Via Piave\",\r\n    \"location_city\": \"Melegnano\",\r\n    \"location_province\": \"MI\",\r\n    \"location_postal_code\": \"20077\",\r\n    \"revenue_percentage\": 30.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/manager/business/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"business",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Business",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"SP Forniture\",\r\n    \"tax_id\": \"11512940963\",\r\n    \"location_number\": \"9\",\r\n    \"location_street\": \"Via Piave\",\r\n    \"location_city\": \"Melegnano\",\r\n    \"location_province\": \"MI\",\r\n    \"location_postal_code\": \"20077\",\r\n    \"revenue_percentage\": 30.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/manager/business/6/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"business",
+										"6",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Business",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/manager/business/6/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"business",
+										"6",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Iva",
+					"item": [
+						{
+							"name": "Iva",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/manager/iva",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"iva"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Iva",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{dev_path}}/api/manager/iva/24/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"iva",
+										"24",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Iva",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"value\": 0.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/manager/iva/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"iva",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Iva",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"value\": 0.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev_path}}/api/manager/iva/24/",
+									"host": [
+										"{{dev_path}}"
+									],
+									"path": [
+										"api",
+										"manager",
+										"iva",
+										"24",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Production Park",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "{{dev_path}}/api/manager/production-park/",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"manager",
+								"production-park",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Closing",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "{{dev_path}}/api/manager/closing/",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"manager",
+								"closing",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Scale",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "{{dev_path}}/api/manager/scale/",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"manager",
+								"scale",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Scales",
+			"item": []
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"waliullah0540@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_path}}/api/auth/login",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{devPath}}/api/auth/user",
+							"host": [
+								"{{devPath}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"info@spforniure.it\",\r\n    \"first_name\": \"Info\",\r\n    \"last_name\": \"SP\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_path}}/api/auth/register",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"old_password\": \"123456\",\r\n    \"new_password\": \"imonelliweb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_path}}/api/auth/change-password/",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"change-password",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request password reset",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"info@spforniture.it\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_path}}/api/auth/password_reset/",
+							"host": [
+								"{{dev_path}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"password_reset",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "Token {{auth_token}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "dev_path",
+			"value": "https://app.bilanciaweb.it",
+			"type": "string"
+		},
+		{
+			"key": "auth_token",
+			"value": "05bb3735ca65327920abeb2bdfa6039d8f554b47eeba23b19475be6a144c9571",
+			"type": "string"
+		}
+	]
+}
